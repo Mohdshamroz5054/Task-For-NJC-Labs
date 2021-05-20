@@ -1,0 +1,14 @@
+
+Q1,2,3.
+ 
+->
+create database if not exists Users;
+-> 
+create table Users(name varchar(16), dob integer, id varchar(16), primary key(name));
+->    
+insert into Users (name, dob, id) values('Shamroz', 2001, '01221')
+insert into Users (name, dob, id) values('Ramesh', 2000, '01332')
+insert into Users (name, dob, id) values('Mrs. Khan', 2007, '14122')
+
+
+select * from Users
